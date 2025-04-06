@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Thumbnail 1 - Vaibhav Shukla</title>
+  <style>
+    * {
+      padding: 0px;
+      margin: 0px;
+    }
+    :root {
+      --first_color: #00ffff;
+      --second_color: #00d1d1;
+    }
+    body {
+/*      justify-content: center;*/
+      align-items: center;
+      background-color: #1f2328;
+      color: whitesmoke;
+      font-family: system-ui;
+      height: 655px;
+      width: 100%;
+    }
+    .info {
+      margin-top: 40px;
+      margin-left: 100px;
+    }
+    h1 {
+      cursor: pointer;
+      position: relative;
+      font-size: 40px;
+    }
+    h1::before {
+      top: 55px;
+      content: "";
+      position: absolute;
+      height: 5px;
+      width: 60px;
+/*      cursor: pointer;*/
+      transition: 0.5s ease-in-out;
+      background-color: whitesmoke;
+    }
+    h1:hover::before {
+      width: 230px;
+    }
+    span {
+/*      margin-right: 600px;*/
+      color: var(--first_color);
+    }
+    .img {
+      margin-top: 50px;
+    }
+    .img img {
+      margin-left: 370px;
+      border: 2px solid whitesmoke;
+      border-radius: 20px;
+      width: 560px;
+/*      height: 255px;*/
+    }
+    p {
+      margin-top: 30px;
+      text-align: left;
+      line-height: 1.6;
+      font-size: 16px;
+      padding: 0 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="img">
+    <img src="4.jpg" alt="Thumbnail 1" width="400">
+  </div>
+  <div class="info">
+    <h1>About <span> This</span></h1>
+    <p>This thumbnail perfectly captures the chaos, surprise, and raw experience of Indian train travel, especially in the sleeper class. The young traveler in the foreground with a shocked expression and backpack immediately draws attention and reflects the exact emotion a first-time or foreign traveler might feel when boarding a crowded Indian train. The background is filled with passengers, bags, and the familiar blue sleeper coach signage, making it instantly relatable and authentic for Indian audiences. The crowd and energy in the image communicate that this is going to be a story of adventure, struggle, or an unexpected experience. The vibrant green shirt of the main subject pops against the busy and slightly muted background, ensuring the viewer’s focus stays on him. This thumbnail is ideal for a vlog or story-style video about train journeys, travel in India, or cultural experiences. It gives off a mix of curiosity, amusement, and surprise—all of which make people want to click and see what happened. Overall, the thumbnail does a great job of combining emotion, storytelling, and visual clarity, which are key elements for strong audience engagement, especially in the travel or lifestyle niche on platforms like YouTube.</p>
+  </div>
+</body>
+</html>

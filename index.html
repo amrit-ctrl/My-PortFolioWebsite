@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the portfolio of Vaibhav Shukla, a web developer and thumbnail designer. Check out creative projects and get in touch.">
+    <meta name="keywords" content="thumbnail portfolio website, portfolio webstie, web developer, thumbnail designer, portfolio, responsive website, HTML, CSS, JavaScript">
+    <title>Vaibhav Shukla | Web Developer & Thumbnail Designer Portfolio</title>
+    <style type="text/css">
+        * {
+            font-family: system-ui;
+        }
+        body {
+            background-color: #1f2328;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        :root {
+            --first_color: #00ffff;
+            --second_color: #00d1d1;
+        }
+        /*----------------------Navbar-------------------------        */
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 0px 100px;
+        }
+        header nav h2 {
+            cursor: pointer;
+            color: whitesmoke;
+
+        }
+        header nav ul {
+            gap: 80px;
+            list-style: none;
+            text-decoration: none;
+            display: flex;
+            list-style: none;
+        }
+        header nav ul li a {
+            transition: 0.3s ease-in-out;
+            font-weight: 500;
+            color: white;
+            text-decoration: none;
+            list-style: none;
+            position: relative;
+        }
+        header nav ul li a::before {
+            content: "";
+            top: 23px;
+            position: absolute;
+            height: 2px;
+            width: 0px;
+            transition: 0.3s ease-in-out;
+            background-color: whitesmoke;
+        }
+        #first {
+            color: var(--first_color);
+        }
+        header nav ul li a:hover {
+            color: var(--first_color);
+        }
+        header nav ul li a:hover::before {
+            width: 60px;   
+        }
+        /*--------------------Home-------------------*/
+        #home {
+            height: 688px;
+            width: 100%;
+            display: flex;
+/*          padding: 130px 100px;*/
+        }
+        #info {
+            margin-left: 100px;
+            margin-top: 210px;
+        }
+        #h21 {
+            cursor: pointer;
+            font-weight: bold;
+            margin: 0px;
+            color: whitesmoke;
+            font-size: 45px;
+        }
+        #h22 {
+            cursor: pointer;
+            font-size: 30px;
+            margin: 0px;
+            color: whitesmoke;
+        }
+        #info p {
+/*          margin: 0px;*/
+            color: whitesmoke;
+            opacity: 0.7;
+            cursor: pointer;
+        }
+        #info span {
+            color: var(--first_color);
+        }
+        #img_sec {
+            margin-top: 80px;
+/*            padding: 0px;*/
+            margin-right: 90px;
+
+        }
+        #border {
+            background-color: transparent;
+            border-radius: 50%;
+            padding: 5px;
+            overflow: hidden;
+            position: relative;
+        }
+        #border::before {
+            content: "";
+            top: -5px;
+            z-index: -1;
+            left: -5px;
+            position: absolute;
+            height: 200px;
+            border-radius: 60px;
+            width: 200px;
+            animation: move 4s linear 20; /* Loop kare */
+            background: linear-gradient(45deg, #ff0231, #8225fc);
+        }
+        #border::after {
+            content: "";
+            top: 260px;
+            z-index: -1;
+            left: 210px;
+            position: absolute;
+            height: 200px;
+            border-radius: 60px;
+            width: 200px;
+            animation: move2 4s linear 20; /* Loop kare */
+            background: linear-gradient(45deg, #ff0231, #8225fc);
+        }
+        @keyframes move {
+            0% {
+                transform: translate(0px, 0px);
+            }
+            25% {
+                transform: translate(250px, 0px);
+            }
+            50% {
+                transform: translate(250px, 250px);
+            }
+            75% {
+                transform: translate(0px, 250px);
+            }
+            100% {
+                transform: translate(0px, 0px);
+            }
+        }
+        @keyframes move2 {
+            0% {
+                transform: translate(0px, 0px);
+            }
+            25% {
+                transform: translate(-250px, 0px);
+            }
+            50% {
+                transform: translate(-250px, -280px);
+            }
+            75% {
+                transform: translate(100px, -280px);
+            }
+            100% {
+                transform: translate(0px, 0px);
+            }
+        }
+        #img {
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 430px;
+            width: 430px;
+            background-color: var(--first_color);
+            border-radius: 50%;
+        }
+        #btn {
+            cursor: pointer;
+            margin-top: 10px;
+            color: black;
+            box-shadow: 0px 0px 10px var(--first_color);
+            background-color: var(--first_color);
+            border: none;
+            border-radius: 15px;
+            font-size: 15px;
+            font-weight: 500;
+/*            padding: 10px;*/
+            height: 40px;
+            width: 150px;
+            transition: 0.3s ease-in-out;
+        }
+        #btn:hover {
+            color: whitesmoke;
+            transform: scale(1.1);
+            background-color: transparent;
+            border: 2px solid var(--first_color);
+        }
+        #img img {
+            height: 450px;
+            width: 450px;
+            margin-bottom: 20px;
+        }
+/*      ----------------------------About Section-------------------------  */
+        #about {
+            display: flex;
+            height: 688px;
+            width: 100%;
+        }
+        #box {
+            display: flex;
+        }
+        #img1 {
+            margin-top: 110px;
+            margin-left: 100px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 430px;
+            width: 430px;
+            background-color: var(--first_color);
+            border-radius: 50%;
+        }
+        #img1 img {
+            height: 450px;
+            width: 450px;
+            margin-bottom: 20px;
+        }
+        #info2 {
+            padding: 50px;
+            margin-left: 50px;
+            margin-top: 100px;
+        }
+        #h211 {
+            cursor: pointer;
+            font-weight: bold;
+            margin: 0px;
+            color: whitesmoke;
+            font-size: 45px;
+        }
+        #h221 {
+            cursor: pointer;
+            font-size: 30px;
+            margin: 0px;
+            color: whitesmoke;
+        }
+        #info2 p {
+/*          margin: 0px;*/
+            cursor: pointer;
+            color: whitesmoke;
+            opacity: 0.7;
+        }
+        #info2 span {
+            color: var(--first_color);
+        }
+        #btn1 {
+            cursor: pointer;
+            margin-top: 10px;
+            color: black;
+            box-shadow: 0px 0px 10px var(--first_color);
+            background-color: var(--first_color);
+            border: none;
+            border-radius: 15px;
+            font-size: 15px;
+            font-weight: 500;
+/*            padding: 10px;*/
+            height: 40px;
+            width: 150px;
+            transition: 0.3s ease-in-out;
+        }
+        #btn1:hover {
+            color: whitesmoke;
+            transform: scale(1.1);
+            background-color: transparent;
+            border: 2px solid var(--first_color);
+        }
+        /*--------------------------portfolio------------------------------*/
+        #portfolio {
+            height: 688px;
+            width: 100%;
+        }
+        #portfolio h2 {
+            cursor: pointer;
+            position: relative;
+            color: whitesmoke;
+            font-size: 40px;
+            margin-left: 100px;
+            display: inline-block;
+        }
+        #portfolio h2 span {
+            color: var(--first_color);
+        }
+        #portfolio h2::before {
+            content: "";
+            top: 60px;
+            position: absolute;
+            height: 5px;
+            width: 70px;
+            transition: 0.5s ease-in-out;
+            background-color: whitesmoke;
+        }
+        #portfolio h2:hover::before {
+            width: 260px;
+        }
+        #t_box {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0px 80px;
+        }
+        .overlay-container {
+          position: relative;
+          width: 350px;
+/*          height: 215px;*/
+          margin: 20px;
+          overflow: hidden;
+          border-radius: 20px;
+        }
+
+        .overlay-container img {
+          width: 100%;
+          height: 100%;
+          display: block;
+          transition: 0.5s ease-in-out;
+        }
+
+        .overlay {
+          cursor: pointer;    
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          background: linear-gradient(0deg, var(--first_color), transparent); /* green with opacity */
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          opacity: 0;
+          transition: 0.5s ease-in-out;
+          color: black;
+          font-weight: bold;
+          text-align: center;
+          padding: 10px;
+        }
+        .overlay button {
+            cursor: pointer;
+            color: whitesmoke;
+            margin-top: 100px;
+            border: none;
+            background: linear-gradient(45deg, #ff0231, #8225fc);
+            border-radius: 10px;
+            transition: 0.2s ease-in-out;
+            height: 40px;
+            width: 100px;
+            box-shadow: 0px 0px 10px solid black;
+        }
+        .overlay button:hover {
+            box-shadow: 0px 0px 10px solid black;
+            transform: scale(1.1);
+        }
+        /* Hover effect */
+        .overlay-container:hover img {
+          opacity: 0.5;
+          transform: scale(1.1);
+        }
+
+        .overlay-container:hover .overlay {
+          opacity: 1;
+        }
+/*        <!------------------------Contact Me------------------------->*/
+        #about_me {
+/*            display: flex;*/
+            height: 688px;
+            width: 100%;
+        }
+        #about_me h2 {
+            cursor: pointer;
+            position: relative;
+            color: whitesmoke;
+            font-size: 40px;
+            margin-left: 100px;
+            display: inline-block;
+        }
+        #about_me p {
+/*            position: relative;*/
+            color: whitesmoke;
+            font-size: 20px;
+            margin-left: 100px;
+        }
+        #about_me h2 span {
+            color: var(--first_color);
+        }
+        #about_me h2::before {
+            content: "";
+            top: 60px;
+            position: absolute;
+            height: 5px;
+            width: 70px;
+            transition: 0.5s ease-in-out;
+            background-color: whitesmoke;
+        }
+        #about_me h2:hover::before {
+            width: 230px;
+        }
+        #content_right {
+            display: flex;
+            justify-content: center;
+        }
+        #center form {
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+            height: 500px;
+            width: 700px;
+        }
+        #name,
+        #email {
+            font-weight: 500;
+            transition: 0.3s ease-in-out;
+            color: whitesmoke;
+            background-color: gray;
+            width: 100%;
+            padding: 0 20px;
+            border: none;
+            cursor: pointer;
+            height: 60px;
+            border-radius: 5px;
+            box-sizing: border-box;
+            margin-top: 15px;
+            font-size: 16px;
+        }
+        #name:hover {
+            color: black;
+            background-color: var(--first_color);
+        }
+        #email:hover {
+            color: black;
+            background-color: var(--first_color);
+        } 
+        #email::placeholder {
+            color: whitesmoke;
+        }
+        #name::placeholder {
+            color: whitesmoke;
+        }
+        #textarea {
+            cursor: pointer;
+            font-weight: 500;
+            transition: 0.3s ease-in-out;
+            color: whitesmoke;
+            background-color: gray;
+            width: 100%;
+            padding: 15px 20px;
+            border: none;
+            margin-top: 15px;
+            border-radius: 10px;
+            height: 350px;
+            resize: none;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        #textarea:hover {
+            color: black;
+            background-color: var(--first_color);
+        }
+        #textarea::placeholder {
+            color: whitesmoke;
+        }
+        .button-wrapper {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        #button {
+            cursor: pointer;
+            margin-top: 10px;
+            color: black;
+            box-shadow: 0px 0px 10px var(--first_color);
+            background-color: var(--first_color);
+            border: none;
+            border-radius: 15px;
+            font-size: 15px;
+            font-weight: 500;
+/*            padding: 10px;*/
+            height: 40px;
+            width: 150px;
+            transition: 0.3s ease-in-out;
+        }
+        #button:hover {
+            color: whitesmoke;
+            transform: scale(1.1);
+            background-color: transparent;
+            border: 2px solid var(--first_color);
+
+        }
+        a {
+            text-decoration: none;
+            color: whitesmoke;
+        }
+        .footer {
+            cursor: pointer;
+            border-radius: 5px;
+            background-color: var(--second_color);
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .i {
+            height: 20px;
+            font-size: 17px;
+            font-weight: 500;
+        }
+        @media (max-width: 768px) {
+        /* 1. Hide Navbar Completely on Mobile */
+            header nav {
+                display: none !important;
+            }
+            
+            /* 2. Home Section Adjustments */
+            #home {
+                flex-direction: column;
+                height: auto;
+                padding: 50px 40px;
+                text-align: center;
+            }
+            
+            /* Hide First Image on Mobile */
+            #img_sec {
+                display: none;
+            }
+            
+            #info {
+                margin: 0;
+                width: 100%;
+            }
+            
+            /* 3. About Section - Center Second Image */
+            #about {
+                flex-direction: column;
+                height: auto;
+                padding: 40px 20px;
+            }
+            
+            #box {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            #img1 {
+                margin: 0 auto;
+                height: 300px;
+                width: 300px;
+            }
+            
+            #img1 img {
+                height: 320px;
+                width: 320px;
+            }
+            
+            #info2 {
+                margin: 30px 0 0 0;
+                padding: 0;
+                text-align: center;
+            }
+            
+            /* 4. Portfolio Section Adjustments */
+            #portfolio {
+                height: auto;
+                padding: 40px 0;
+            }
+            
+            #portfolio h2 {
+                margin-left: 20px;
+            }
+            
+            #t_box {
+                padding: 0 10px;
+                justify-content: center;
+            }
+            
+            .overlay-container {
+                width: 100%;
+                max-width: 300px;
+                margin: 10px auto;
+            }
+            
+            /* 5. Contact Section Adjustments */
+            #about_me {
+                height: auto;
+                padding: 40px 0;
+            }
+            
+            #about_me h2, 
+            #about_me p {
+                margin-left: 20px;
+            }
+            
+            #center form {
+                width: 90%;
+                padding: 15px;
+            }
+            
+            /* 6. Footer Adjustments */
+            .footer {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+                padding: 15px;
+            }
+            
+            /* 7. Text Size Adjustments for Mobile */
+            #h21, #h211 {
+                font-size: 32px;
+            }
+            
+            #h22, #h221 {
+                font-size: 24px;
+            }
+            
+            #info p, 
+            #info2 p,
+            #about_me p {
+                font-size: 16px;
+                line-height: 1.6;
+            }
+            
+            /* 8. Button Adjustments */
+            #btn, 
+            #btn1, 
+            #button {
+                width: 140px;
+                height: 40px;
+                font-size: 14px;
+            }
+        }
+
+        /* Small Mobile Devices (up to 480px) */
+        @media (max-width: 480px) {
+            #img1 {
+                height: 250px;
+                width: 250px;
+            }
+            
+            #img1 img {
+                height: 270px;
+                width: 270px;
+            }
+            
+            .overlay button {
+                margin-top: 60px;
+            }
+            
+            #name, 
+            #email, 
+            #textarea {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h2>Portfolio.</h2>
+            <ul>
+                <li><a href="#home" id="first">Home</a></li>
+                <li><a href="#about" id="2">About</a></li>
+                <li><a href="#portfolio" id="3">Portfolio</a></li>
+                <li><a href="#about_me" id="4">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <div id="info">
+            <h1 id="h21">Hi, I'm Vaibhav Shukla</h1>
+            <h2 id="h22">And I Am a <span> Thumbnail Designer </span></h2>
+            <p>I'm a passionate thumbnail desiger dedicated to creating eye-catching, high-converting thumbnails that grab attention instantly!  With a keen eye for design and deep understanding of audience psychology, I craft engaging visuals that boost clicks and maximize reach.</p>
+            <button id="btn">See Portfolio</button>
+        </div>
+        <div id="img_sec">
+            <div id="border">
+                <div id="img">
+                    <img src="img1.png">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div id="box">
+            <div id="img1">
+                <img src="img1.png">
+            </div>
+        </div>
+        <div id="info2">
+            <h1 id="h211">About <span> Me </span></h1>
+            <h2 id="h221">A Thumbnail Designer</h2>
+            <p>Hi, I'm Vaibhav Shukla, a professional thumbnail designer specializing in high-converting, click-worthy designs. I help creators boost their engagement and views with attention-grabbing thumbnails! I offer custom, high-quality, and visually appealing thumbnails with modern aesthetics, trendy designs, and eye-catching colors & fonts. My goal is to create scroll-stopping thumbnails that increase your click-through rate (CTR) and make your content stand out. With fast delivery, 100% unique concepts, and client satisfaction guarantee, you can trust me to bring your vision to life. Let’s connect and take your content to the next level!</p>
+            <button id="btn1">See Portfolio</button>
+    </section>
+    <section id="portfolio">
+    <h2>My <span>Portfolio</span></h2>
+    <div id="t_box">
+
+        <div class="overlay-container">
+          <img src="1.jpg" alt="Thumbnail">
+          <div class="overlay">
+            <button><a href="1.html" class="btn">About More</a></button>
+          </div>
+        </div>
+        <div class="overlay-container">
+          <img src="2.jpg" alt="Thumbnail">
+          <div class="overlay">
+            <button><a href="2.html" class="btn">About More</a></button>
+          </div>
+        </div>
+        <div class="overlay-container">
+          <img src="4.jpg" alt="Thumbnail">
+          <div class="overlay">
+            <button><a href="3.html" class="btn">About More</a></button>
+          </div>
+        </div>
+        <div class="overlay-container">
+          <img src="5.jpg" alt="Thumbnail">
+          <div class="overlay">
+            <button><a href="4.html" class="btn">About More</a></button>
+          </div>
+        </div>
+        <div class="overlay-container">
+          <img src="6.jpg" alt="Thumbnail">
+          <div class="overlay">
+            <button><a href="5.html" class="btn">About More</a></button>
+          </div>
+        </div>
+        <div class="overlay-container">
+          <img src="7.jpg" alt="Thumbnail">
+          <div class="overlay">
+            <button><a href="6.html" class="btn">About More</a></button>
+          </div>
+        </div>
+        
+    </div>
+</section>
+
+    <section id="portfolio">
+        <h2>My <span>Portfolio</span></h2>
+        <div id="t_box">
+            <div class="overlay-container">
+          <img src="8.jpg" alt="Thumbnail">
+          <div class="overlay">
+            <button><a href="7.html" class="btn">About More</a></button>
+          </div>
+        </div>
+        <div class="overlay-container">
+          <img src="9.jpg" alt="Thumbnail">
+          <div class="overlay">
+            <button><a href="8.html" class="btn">About More</a></button>
+          </div>
+        </div>
+        <div class="overlay-container">
+          <img src="10.jpg" alt="Thumbnail">
+          <div class="overlay">
+            <button><a href="9.html" class="btn">About More</a></button>
+          </div>
+        </div>
+        <div class="overlay-container">
+          <img src="11.jpg" alt="Thumbnail">
+          <div class="overlay">
+            <button><a href="10.html" class="btn">About More</a></button>
+          </div>
+        </div>
+        <div class="overlay-container">
+          <img src="12.jpg" alt="Thumbnail">
+          <div class="overlay">
+            <button><a href="11.html" class="btn">About More</a></button>
+          </div>
+        </div>
+        <div class="overlay-container">
+          <img src="13.jpg" alt="Thumbnail">
+          <div class="overlay">
+            <button><a href="12.html" class="btn">About More</a></button>
+          </div>
+        </div>
+    </section>
+    <section id="portfolio">
+        <h2>My <span>Portfolio</span></h2>
+        <div id="t_box">
+            <div class="overlay-container">
+          <img src="14.jpg" alt="Thumbnail">
+          <div class="overlay">
+            <button><a href="13.html" class="btn">About More</a></button>
+          </div>
+        </div>
+        <div class="overlay-container">
+          <img src="15.jpg" alt="Thumbnail">
+          <div class="overlay">
+            <button><a href="14.html" class="btn">About More</a></button>
+          </div>
+        </div>
+        <div class="overlay-container">
+          <img src="16.jpg" alt="Thumbnail">
+          <div class="overlay">
+            <button><a href="15.html" class="btn">About More</a></button>
+          </div>
+        </div>
+        <div class="overlay-container">
+          <img src="17.jpg" alt="Thumbnail">
+          <div class="overlay">
+            <button><a href="16.html" class="btn">About More</a></button>
+          </div>
+        </div>
+        <div class="overlay-container">
+          <img src="18.jpg" alt="Thumbnail">
+          <div class="overlay">
+            <button><a href="17.html" class="btn">About More</a></button>
+          </div>
+        </div>
+        <div class="overlay-container">
+          <img src="19.jpg" alt="Thumbnail">
+          <div class="overlay">
+            <button><a href="18.html" class="btn">About More</a></button>
+          </div>
+        </div>
+    </section>
+    <section id="about_me">
+    <h2>About <span>Me</span></h2>
+    <div id="content_right">
+        <div id="center">
+            <form action="https://formspree.io/f/mjkyyeoa" method="POST">
+                <input id="name" type="text" placeholder="Name" name="Name" required>
+                <input id="email" type="email" placeholder="Email" name="Email" required>
+                <textarea id="textarea" name="Message" placeholder="Message" required></textarea>
+                <div class="button-wrapper">
+                    <button id="button" type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="i">Name: Vaibhav Shukla</div>
+        <div class="i">Phone/Whatsapp: +91 9839724196</div>
+        <div class="i">Linkdin: vaibhavshukla.io</div>
+    </div>
+</section>
+<script>
+    // Detect touch device and add 'no-hover' class to body
+    if ('ontouchstart' in window || navigator.msMaxTouchPoints) {
+        document.body.classList.add('no-hover');
+    }
+    </script>
+</body>
+</html>

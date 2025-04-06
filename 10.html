@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Thumbnail 1 - Vaibhav Shukla</title>
+  <style>
+    * {
+      padding: 0px;
+      margin: 0px;
+    }
+    :root {
+      --first_color: #00ffff;
+      --second_color: #00d1d1;
+    }
+    body {
+/*      justify-content: center;*/
+      align-items: center;
+      background-color: #1f2328;
+      color: whitesmoke;
+      font-family: system-ui;
+      height: 655px;
+      width: 100%;
+    }
+    .info {
+      margin-top: 40px;
+      margin-left: 100px;
+    }
+    h1 {
+      cursor: pointer;
+      position: relative;
+      font-size: 40px;
+    }
+    h1::before {
+      top: 55px;
+      content: "";
+      position: absolute;
+      height: 5px;
+      width: 60px;
+/*      cursor: pointer;*/
+      transition: 0.5s ease-in-out;
+      background-color: whitesmoke;
+    }
+    h1:hover::before {
+      width: 230px;
+    }
+    span {
+/*      margin-right: 600px;*/
+      color: var(--first_color);
+    }
+    .img {
+      margin-top: 50px;
+    }
+    .img img {
+      margin-left: 370px;
+      border: 2px solid whitesmoke;
+      border-radius: 20px;
+      width: 560px;
+/*      height: 255px;*/
+    }
+    p {
+      margin-top: 30px;
+      text-align: left;
+      line-height: 1.6;
+      font-size: 16px;
+      padding: 0 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="img">
+    <img src="11.jpg" alt="Thumbnail 1" width="400">
+  </div>
+  <div class="info">
+    <h1>About <span> This</span></h1>
+    <p>This thumbnail effectively captures attention and instantly conveys the idea of real online earnings. The bright green t-shirt worn by the smiling man draws viewers in with positive energy and enthusiasm. Positioned beside him is a clean, modern payment notification from Google Pay showing 10,000 received just 1 hour ago. This small detail creates a sense of urgency and authenticity, making it feel like a recent and real transaction. The design smartly uses white for the notification card to keep it prominent, while the colorful Google Pay logo builds trust and recognition. The background is softly blurred with cool blue tones, ensuring the main subject and the payment highlight stand out clearly without any distractions. The warm expression of the individual and the well-lit composition make the image more relatable and inviting. This thumbnail appeals especially to viewers who are curious about how to earn money online, suggesting that success is not only possible but happening right now. The combination of a cheerful human face, a known payment platform, and a specific amount received creates a strong emotional trigger that encourages clicks. Overall, it’s a powerful, visually appealing design that blends realism and aspiration perfectly to drive engagement.</p>
+  </div>
+</body>
+</html>

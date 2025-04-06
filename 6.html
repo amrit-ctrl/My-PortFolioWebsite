@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Thumbnail 1 - Vaibhav Shukla</title>
+  <style>
+    * {
+      padding: 0px;
+      margin: 0px;
+    }
+    :root {
+      --first_color: #00ffff;
+      --second_color: #00d1d1;
+    }
+    body {
+/*      justify-content: center;*/
+      align-items: center;
+      background-color: #1f2328;
+      color: whitesmoke;
+      font-family: system-ui;
+      height: 655px;
+      width: 100%;
+    }
+    .info {
+      margin-top: 40px;
+      margin-left: 100px;
+    }
+    h1 {
+      cursor: pointer;
+      position: relative;
+      font-size: 40px;
+    }
+    h1::before {
+      top: 55px;
+      content: "";
+      position: absolute;
+      height: 5px;
+      width: 60px;
+/*      cursor: pointer;*/
+      transition: 0.5s ease-in-out;
+      background-color: whitesmoke;
+    }
+    h1:hover::before {
+      width: 230px;
+    }
+    span {
+/*      margin-right: 600px;*/
+      color: var(--first_color);
+    }
+    .img {
+      margin-top: 50px;
+    }
+    .img img {
+      margin-left: 370px;
+      border: 2px solid whitesmoke;
+      border-radius: 20px;
+      width: 560px;
+/*      height: 255px;*/
+    }
+    p {
+      margin-top: 30px;
+      text-align: left;
+      line-height: 1.6;
+      font-size: 16px;
+      padding: 0 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="img">
+    <img src="7.jpg" alt="Thumbnail 1" width="400">
+  </div>
+  <div class="info">
+    <h1>About <span> This</span></h1>
+    <p>This thumbnail is strategically designed using visual psychology to capture attention and convey educational value instantly. The bold, 3D-style title "Python Function" at the top immediately tells the viewer what the video is about, appealing directly to learners interested in coding. The use of a clean and vibrant color palette—especially the turquoise shirt and bright background—evokes positivity, trust, and energy, which makes the content feel approachable. Including a smiling human face enhances emotional connection, as studies show thumbnails with expressive human faces get more clicks. The code snippet in the center-left is styled with syntax highlighting, which not only adds visual structure but also reinforces authenticity and learning relevance. Placement of the code alongside the person, connected by a dotted arrow, subtly guides the viewer's eyes and makes it feel like the person is teaching the concept. The blurred futuristic background ensures the focus stays on the main content while also giving a modern tech vibe. Altogether, the thumbnail combines curiosity, clarity, and confidence to engage both algorithm and audience, using proven visual hierarchy and emotional cues to stand out in a crowded feed. It’s crafted to boost CTR while staying visually educational and professionally designed.</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Thumbnail 1 - Vaibhav Shukla</title>
+  <style>
+    * {
+      padding: 0px;
+      margin: 0px;
+    }
+    :root {
+      --first_color: #00ffff;
+      --second_color: #00d1d1;
+    }
+    body {
+/*      justify-content: center;*/
+      align-items: center;
+      background-color: #1f2328;
+      color: whitesmoke;
+      font-family: system-ui;
+      height: 655px;
+      width: 100%;
+    }
+    .info {
+      margin-top: 40px;
+      margin-left: 100px;
+    }
+    h1 {
+      cursor: pointer;
+      position: relative;
+      font-size: 40px;
+    }
+    h1::before {
+      top: 55px;
+      content: "";
+      position: absolute;
+      height: 5px;
+      width: 60px;
+/*      cursor: pointer;*/
+      transition: 0.5s ease-in-out;
+      background-color: whitesmoke;
+    }
+    h1:hover::before {
+      width: 230px;
+    }
+    span {
+/*      margin-right: 600px;*/
+      color: var(--first_color);
+    }
+    .img {
+      margin-top: 50px;
+    }
+    .img img {
+      margin-left: 370px;
+      border: 2px solid whitesmoke;
+      border-radius: 20px;
+      width: 560px;
+/*      height: 255px;*/
+    }
+    p {
+      margin-top: 30px;
+      text-align: left;
+      line-height: 1.6;
+      font-size: 16px;
+      padding: 0 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="img">
+    <img src="6.jpg" alt="Thumbnail 1" width="400">
+  </div>
+  <div class="info">
+    <h1>About <span> This</span></h1>
+    <p>The shocked facial expression at the center immediately grabs attention by triggering curiosity and emotion—viewers are naturally drawn to faces, especially those expressing strong emotions like surprise. The use of a bright neon green jacket contrasts sharply with the soft, blurred background, making the central figure pop and directing all focus toward him. On the left and right, the use of recognizable brand logos—ChatGPT with a green check and DeepSeek with a red cross—creates a clear, immediate comparison, appealing to the viewer’s instinct to pick sides or find out “which is better.” This comparison layout taps into the "versus" psychology that often increases click-through rates. The minimal text and clean design avoid distractions, allowing the viewer to instantly understand the core message. Color psychology plays a strong role here: green symbolizes approval and success, while red signals error or negativity. Overall, this thumbnail effectively combines emotion, contrast, branding, and clarity to attract clicks and engage the audience within seconds.</p>
+  </div>
+</body>
+</html>

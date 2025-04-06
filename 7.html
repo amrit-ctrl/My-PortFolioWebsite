@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Thumbnail 1 - Vaibhav Shukla</title>
+  <style>
+    * {
+      padding: 0px;
+      margin: 0px;
+    }
+    :root {
+      --first_color: #00ffff;
+      --second_color: #00d1d1;
+    }
+    body {
+/*      justify-content: center;*/
+      align-items: center;
+      background-color: #1f2328;
+      color: whitesmoke;
+      font-family: system-ui;
+      height: 655px;
+      width: 100%;
+    }
+    .info {
+      margin-top: 40px;
+      margin-left: 100px;
+    }
+    h1 {
+      cursor: pointer;
+      position: relative;
+      font-size: 40px;
+    }
+    h1::before {
+      top: 55px;
+      content: "";
+      position: absolute;
+      height: 5px;
+      width: 60px;
+/*      cursor: pointer;*/
+      transition: 0.5s ease-in-out;
+      background-color: whitesmoke;
+    }
+    h1:hover::before {
+      width: 230px;
+    }
+    span {
+/*      margin-right: 600px;*/
+      color: var(--first_color);
+    }
+    .img {
+      margin-top: 50px;
+    }
+    .img img {
+      margin-left: 370px;
+      border: 2px solid whitesmoke;
+      border-radius: 20px;
+      width: 560px;
+/*      height: 255px;*/
+    }
+    p {
+      margin-top: 30px;
+      text-align: left;
+      line-height: 1.6;
+      font-size: 16px;
+      padding: 0 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="img">
+    <img src="8.jpg" alt="Thumbnail 1" width="400">
+  </div>
+  <div class="info">
+    <h1>About <span> This</span></h1>
+    <p>This thumbnail is carefully crafted using psychological triggers to grab attention and generate curiosity, especially for viewers interested in finance or trading. The bold headline "HOW TO START TRADING WITH 0" uses large, all-caps text with a shadow effect that adds depth and urgency, making it pop out in crowded YouTube feeds. The turquoise color of the words “TRADING WITH 0” creates a contrast that instantly pulls focus, while the bolts on the text box give it a modern, strong, and actionable feel. The inclusion of a happy, confident human face builds trust and emotional engagement—thumbnails with faces are statistically proven to boost CTR. A laptop showing a balance of $382,294 and a sharply rising graph adds a powerful visual cue for success, triggering aspiration and curiosity. The arrow connecting the text to the screen acts as a visual guide, subconsciously leading the viewer’s eyes from the promise (“TRADING WITH 0”) to the proof (the earnings chart). The background is blurred enough to keep the viewer’s focus on the main elements, yet it subtly communicates a professional indoor workspace. This thumbnail is designed to promise value, spark financial interest, and emotionally connect with the viewer—all within a single frame.</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Thumbnail 1 - Vaibhav Shukla</title>
+  <style>
+    * {
+      padding: 0px;
+      margin: 0px;
+    }
+    :root {
+      --first_color: #00ffff;
+      --second_color: #00d1d1;
+    }
+    body {
+/*      justify-content: center;*/
+      align-items: center;
+      background-color: #1f2328;
+      color: whitesmoke;
+      font-family: system-ui;
+      height: 655px;
+      width: 100%;
+    }
+    .info {
+      margin-top: 40px;
+      margin-left: 100px;
+    }
+    h1 {
+      cursor: pointer;
+      position: relative;
+      font-size: 40px;
+    }
+    h1::before {
+      top: 55px;
+      content: "";
+      position: absolute;
+      height: 5px;
+      width: 60px;
+/*      cursor: pointer;*/
+      transition: 0.5s ease-in-out;
+      background-color: whitesmoke;
+    }
+    h1:hover::before {
+      width: 230px;
+    }
+    span {
+/*      margin-right: 600px;*/
+      color: var(--first_color);
+    }
+    .img {
+      margin-top: 50px;
+    }
+    .img img {
+      margin-left: 370px;
+      border: 2px solid whitesmoke;
+      border-radius: 20px;
+      width: 560px;
+/*      height: 255px;*/
+    }
+    p {
+      margin-top: 30px;
+      text-align: left;
+      line-height: 1.6;
+      font-size: 16px;
+      padding: 0 20px;
+    }
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 32px;
+        margin-bottom: 30px;
+      }
+      
+      h1::before {
+        bottom: -10px;
+        height: 4px;
+      }
+      
+      p {
+        font-size: 15px;
+        text-align: left;
+        padding: 0;
+      }
+      
+      .info {
+        padding: 20px;
+        margin-top: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 28px;
+        margin-bottom: 25px;
+      }
+      
+      h1::before {
+        width: 40px;
+        height: 3px;
+      }
+      
+      h1:hover::before {
+        width: 150px;
+      }
+      
+      p {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="img">
+    <img src="2.jpg" alt="Thumbnail 1" width="400">
+  </div>
+  <div class="info">
+    <h1>About <span> This</span></h1>
+    <p>This thumbnail is highly eye-catching and well-designed, making it perfect for a video centered around freelancing, client acquisition, or online business success. The shocked and excited expression of the man instantly captures attention and sparks curiosity, encouraging viewers to click and learn more. It visually represents a moment many freelancers dream of—getting multiple client inquiries and job offers all at once. The use of realistic Gmail-style notifications like “What’s Your Charge?”, “10 New Client Request”, and “Can You Do This?” adds a sense of urgency and excitement. These messages make the situation feel real and relatable, especially for aspiring freelancers or service providers hoping to land clients. The design is clean and professional, with a well-balanced layout that doesn’t feel cluttered despite having multiple elements. The notification style gives a sense of achievement and hustle, which is emotionally appealing to the audience. The muted grayscale background helps the notifications and the man’s expression stand out even more, drawing the viewer’s focus to the key message. Overall, this thumbnail does an excellent job of blending emotion, relevance, and clarity. It’s perfect for drawing in viewers interested in freelancing, side hustles, or ways to make money online through client-based work.</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Thumbnail 1 - Vaibhav Shukla</title>
+  <style>
+    * {
+      padding: 0px;
+      margin: 0px;
+    }
+    :root {
+      --first_color: #00ffff;
+      --second_color: #00d1d1;
+    }
+    body {
+/*      justify-content: center;*/
+      align-items: center;
+      background-color: #1f2328;
+      color: whitesmoke;
+      font-family: system-ui;
+      height: 655px;
+      width: 100%;
+    }
+    .info {
+      margin-top: 40px;
+      margin-left: 100px;
+    }
+    h1 {
+      cursor: pointer;
+      position: relative;
+      font-size: 40px;
+    }
+    h1::before {
+      top: 55px;
+      content: "";
+      position: absolute;
+      height: 5px;
+      width: 60px;
+/*      cursor: pointer;*/
+      transition: 0.5s ease-in-out;
+      background-color: whitesmoke;
+    }
+    h1:hover::before {
+      width: 230px;
+    }
+    span {
+/*      margin-right: 600px;*/
+      color: var(--first_color);
+    }
+    .img {
+      margin-top: 50px;
+    }
+    .img img {
+      margin-left: 370px;
+      border: 2px solid whitesmoke;
+      border-radius: 20px;
+      width: 560px;
+/*      height: 255px;*/
+    }
+    p {
+      margin-top: 30px;
+      text-align: left;
+      line-height: 1.6;
+      font-size: 16px;
+      padding: 0 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="img">
+    <img src="5.jpg" alt="Thumbnail 1" width="400">
+  </div>
+  <div class="info">
+    <h1>About <span> This</span></h1>
+    <p>This thumbnail perfectly captures the intrigue and curiosity surrounding the future of artificial intelligence. The central character, wearing a bright yellow jacket and displaying a surprised expression, instantly grabs attention and creates a sense of urgency and excitement. Surrounding him are futuristic humanoid robots with glowing eyes and advanced designs, symbolizing the rapid advancement of AI and its potential to reshape our world. The bold “FUTURE OF AI” text at the top reinforces the theme and immediately tells the viewer what the video is about. The background, with sleek buildings and a tech-inspired environment, adds a futuristic vibe, enhancing the visual storytelling. This thumbnail works exceptionally well for videos discussing AI advancements, future technology, robotics, or even speculative topics like AI takeover or how AI will affect human jobs. The bright colors, balanced composition, and emotional expression of the subject create a powerful hook that makes viewers curious about what insights or warnings the video might offer. Overall, the thumbnail blends emotion, futuristic visuals, and a clear message—all elements necessary to drive high click-through rates in tech-related YouTube content.</p>
+  </div>
+</body>
+</html>

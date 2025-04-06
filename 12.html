@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Thumbnail 1 - Vaibhav Shukla</title>
+  <style>
+    * {
+      padding: 0px;
+      margin: 0px;
+    }
+    :root {
+      --first_color: #00ffff;
+      --second_color: #00d1d1;
+    }
+    body {
+/*      justify-content: center;*/
+      align-items: center;
+      background-color: #1f2328;
+      color: whitesmoke;
+      font-family: system-ui;
+      height: 655px;
+      width: 100%;
+    }
+    .info {
+      margin-top: 40px;
+      margin-left: 100px;
+    }
+    h1 {
+      cursor: pointer;
+      position: relative;
+      font-size: 40px;
+    }
+    h1::before {
+      top: 55px;
+      content: "";
+      position: absolute;
+      height: 5px;
+      width: 60px;
+/*      cursor: pointer;*/
+      transition: 0.5s ease-in-out;
+      background-color: whitesmoke;
+    }
+    h1:hover::before {
+      width: 230px;
+    }
+    span {
+/*      margin-right: 600px;*/
+      color: var(--first_color);
+    }
+    .img {
+      margin-top: 50px;
+    }
+    .img img {
+      margin-left: 370px;
+      border: 2px solid whitesmoke;
+      border-radius: 20px;
+      width: 560px;
+/*      height: 255px;*/
+    }
+    p {
+      margin-top: 30px;
+      text-align: left;
+      line-height: 1.6;
+      font-size: 16px;
+      padding: 0 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="img">
+    <img src="13.jpg" alt="Thumbnail 1" width="400">
+  </div>
+  <div class="info">
+    <h1>About <span> This</span></h1>
+    <p>The thumbnail employs a split design featuring Elon Musk, contrasting a grayscale, textured left side with a colored right side, both flanking the "$5000B" figure rendered with similar contrasting styles. This visual dichotomy likely intends to create a curiosity gap, prompting viewers to understand the connection between the two presentations and the substantial financial value. The inclusion of the recognizable Elon Musk aims to leverage his authority and relevance, while his direct gaze and subtle smile on the colored side seek to build trust and excitement. The bold "$5000B" figure, emphasized by the contrasting visual treatments, is designed to be eye-catching. The underlying psychology likely intends to increase CTR by presenting an intriguing visual puzzle featuring a prominent figure and a significant number, compelling clicks to uncover the narrative of transformation or achievement implied by the thumbnail's contrasting elements and positive associations.
+</p>
+  </div>
+</body>
+</html>

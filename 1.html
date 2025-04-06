@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thumbnail 1 - Vaibhav Shukla</title>
+  <style>
+    * {
+      padding: 0px;
+      margin: 0px;
+      box-sizing: border-box;
+    }
+    :root {
+      --first_color: #00ffff;
+      --second_color: #00d1d1;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #1f2328;
+      color: whitesmoke;
+      font-family: system-ui;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    .info {
+      margin-top: 30px;
+      width: 100%;
+      max-width: 1200px;
+    }
+    h1 {
+      cursor: pointer;
+      position: relative;
+      font-size: 40px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    h1::before {
+      content: "";
+      position: absolute;
+      bottom: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 5px;
+      width: 60px;
+      transition: 0.5s ease-in-out;
+      background-color: whitesmoke;
+    }
+    h1:hover::before {
+      width: 230px;
+    }
+    span {
+      color: var(--first_color);
+    }
+    .img {
+      margin-top: 30px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .img img {
+      border: 2px solid whitesmoke;
+      border-radius: 20px;
+      max-width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+    p {
+      margin-top: 30px;
+      text-align: justify;
+      line-height: 1.6;
+      font-size: 16px;
+      padding: 0 10px;
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 32px;
+        margin-bottom: 30px;
+      }
+      
+      h1::before {
+        bottom: -10px;
+        height: 4px;
+      }
+      
+      p {
+        font-size: 15px;
+        text-align: left;
+        padding: 0;
+      }
+      
+      .info {
+        padding: 20px;
+        margin-top: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 28px;
+        margin-bottom: 25px;
+      }
+      
+      h1::before {
+        width: 40px;
+        height: 3px;
+      }
+      
+      h1:hover::before {
+        width: 150px;
+      }
+      
+      p {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="img">
+    <img src="1.jpg" alt="Thumbnail 1">
+  </div>
+  <div class="info">
+    <h1>About <span> This</span></h1>
+    <p>This thumbnail is a visually striking and psychologically powerful representation of financial success on YouTube, designed to instantly grab attention and spark aspiration. The central figure, dressed in a sharp suit, symbolizes professionalism and success, while their head replaced with the bold red YouTube logo signals that their identity is defined by their presence on the platform. This clever visual metaphor speaks directly to viewers interested in YouTube growth or income. The large, high-contrast "$29,394" revenue figure is strategically placed in the top-right corner with a green upward arrow, a classic symbol of growth and profit, which activates a sense of possibility and financial motivation in the viewer's mind. The background includes a blue financial graph line ascending upward, reinforcing the narrative of increasing success. Blue is often associated with trust, confidence, and stability, making it a psychologically safe color that supports the theme of consistent growth. Floating dollar bills around the subject add movement and suggest abundance, tapping into viewers' dreams of wealth. The typography is modern, bold, and easy to read, ensuring that even a quick scroll-by leaves an impression. Overall, the thumbnail uses color theory, symbolism, and clean design to create a visually appealing and emotionally triggering image that's highly clickable, especially for audiences interested in making money on YouTube or exploring creator economy opportunities.</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Thumbnail 1 - Vaibhav Shukla</title>
+  <style>
+    * {
+      padding: 0px;
+      margin: 0px;
+    }
+    :root {
+      --first_color: #00ffff;
+      --second_color: #00d1d1;
+    }
+    body {
+/*      justify-content: center;*/
+      align-items: center;
+      background-color: #1f2328;
+      color: whitesmoke;
+      font-family: system-ui;
+      height: 655px;
+      width: 100%;
+    }
+    .info {
+      margin-top: 40px;
+      margin-left: 100px;
+    }
+    h1 {
+      cursor: pointer;
+      position: relative;
+      font-size: 40px;
+    }
+    h1::before {
+      top: 55px;
+      content: "";
+      position: absolute;
+      height: 5px;
+      width: 60px;
+/*      cursor: pointer;*/
+      transition: 0.5s ease-in-out;
+      background-color: whitesmoke;
+    }
+    h1:hover::before {
+      width: 230px;
+    }
+    span {
+/*      margin-right: 600px;*/
+      color: var(--first_color);
+    }
+    .img {
+      margin-top: 50px;
+    }
+    .img img {
+      margin-left: 370px;
+      border: 2px solid whitesmoke;
+      border-radius: 20px;
+      width: 560px;
+/*      height: 255px;*/
+    }
+    p {
+      margin-top: 30px;
+      text-align: left;
+      line-height: 1.6;
+      font-size: 16px;
+      padding: 0 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="img">
+    <img src="15.jpg" alt="Thumbnail 1" width="400">
+  </div>
+  <div class="info">
+    <h1>About <span> This</span></h1>
+    <p>The thumbnail is divided vertically, contrasting the year "1946" on the left with "2025" on the right. The left side features a grayscale image of a man smiling, overlaid on a blurred black and white background that appears to depict a more traditional or less developed setting, possibly with natural elements like trees. The right side shows the same man, now in color and wearing a yellow shirt, superimposed on a vibrant, colorful background featuring what seems to be a modern cityscape with Asian architectural elements, such as a pagoda-style building and cherry blossom trees. The split image and contrasting visuals strongly suggest a theme of transformation or progress over time, specifically between 1946 and 2025. The man's consistent smile across both sides might imply a positive evolution. The use of distinct color palettes and background settings emphasizes the differences between the two time periods. The thumbnail likely aims to evoke curiosity about the nature of this transformation – whether it's personal, societal, or technological – encouraging viewers to click and learn more about the changes represented.
+</p>
+  </div>
+</body>
+</html>

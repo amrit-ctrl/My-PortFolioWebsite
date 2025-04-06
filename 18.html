@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Thumbnail 1 - Vaibhav Shukla</title>
+  <style>
+    * {
+      padding: 0px;
+      margin: 0px;
+    }
+    :root {
+      --first_color: #00ffff;
+      --second_color: #00d1d1;
+    }
+    body {
+/*      justify-content: center;*/
+      align-items: center;
+      background-color: #1f2328;
+      color: whitesmoke;
+      font-family: system-ui;
+      height: 655px;
+      width: 100%;
+    }
+    .info {
+      margin-top: 40px;
+      margin-left: 100px;
+    }
+    h1 {
+      cursor: pointer;
+      position: relative;
+      font-size: 40px;
+    }
+    h1::before {
+      top: 55px;
+      content: "";
+      position: absolute;
+      height: 5px;
+      width: 60px;
+/*      cursor: pointer;*/
+      transition: 0.5s ease-in-out;
+      background-color: whitesmoke;
+    }
+    h1:hover::before {
+      width: 230px;
+    }
+    span {
+/*      margin-right: 600px;*/
+      color: var(--first_color);
+    }
+    .img {
+      margin-top: 50px;
+    }
+    .img img {
+      margin-left: 370px;
+      border: 2px solid whitesmoke;
+      border-radius: 20px;
+      width: 560px;
+/*      height: 255px;*/
+    }
+    p {
+      margin-top: 30px;
+      text-align: left;
+      line-height: 1.6;
+      font-size: 16px;
+      padding: 0 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="img">
+    <img src="19.jpg" alt="Thumbnail 1" width="400">
+  </div>
+  <div class="info">
+    <h1>About <span> This</span></h1>
+    <p>This thumbnail is designed with a strong psychological impact that instantly grabs attention. Replacing the person's head with a YouTube logo is a clever visual metaphor, symbolizing how deeply this individual is connected to or defined by YouTube—it’s become their identity. This creative twist sparks curiosity and makes viewers more likely to click. The man in a professional suit adds a sense of authority and success, subtly implying that earning money from YouTube can be a serious, legitimate career. The central white YouTube icon with four income sources written around it—like "AdSense," "Sponsorship," "Selling," and a visible amount ($2,437)—gives viewers a clear and motivating message: there are multiple ways to make money on YouTube. This makes the thumbnail aspirational, triggering a “I can do this too” mindset in the audience. The color scheme is simple but effective, using a black background and white text for high contrast and direct focus. Overall, the structure of this thumbnail is well thought-out, combining emotional motivation, professional appeal, and financial inspiration—making it highly effective at increasing click-through rates and engagement.</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Thumbnail 1 - Vaibhav Shukla</title>
+  <style>
+    * {
+      padding: 0px;
+      margin: 0px;
+    }
+    :root {
+      --first_color: #00ffff;
+      --second_color: #00d1d1;
+    }
+    body {
+/*      justify-content: center;*/
+      align-items: center;
+      background-color: #1f2328;
+      color: whitesmoke;
+      font-family: system-ui;
+      height: 655px;
+      width: 100%;
+    }
+    .info {
+      margin-top: 40px;
+      margin-left: 100px;
+    }
+    h1 {
+      cursor: pointer;
+      position: relative;
+      font-size: 40px;
+    }
+    h1::before {
+      top: 55px;
+      content: "";
+      position: absolute;
+      height: 5px;
+      width: 60px;
+/*      cursor: pointer;*/
+      transition: 0.5s ease-in-out;
+      background-color: whitesmoke;
+    }
+    h1:hover::before {
+      width: 230px;
+    }
+    span {
+/*      margin-right: 600px;*/
+      color: var(--first_color);
+    }
+    .img {
+      margin-top: 50px;
+    }
+    .img img {
+      margin-left: 370px;
+      border: 2px solid whitesmoke;
+      border-radius: 20px;
+      width: 560px;
+/*      height: 255px;*/
+    }
+    p {
+      margin-top: 30px;
+      text-align: left;
+      line-height: 1.6;
+      font-size: 16px;
+      padding: 0 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="img">
+    <img src="16.jpg" alt="Thumbnail 1" width="400">
+  </div>
+  <div class="info">
+    <h1>About <span> This</span></h1>
+    <p>This thumbnail is designed with a powerful psychological blend of surprise, motion, and urgency to immediately capture attention. The subject's wide-eyed, shocked expression creates emotional curiosity—viewers instantly want to know *why* he’s so surprised. Motion blur in the background simulates high-speed movement, making the scene look dynamic and exciting, which grabs attention in a fast-scrolling YouTube feed. The central focus on the person riding a bike directly connects with themes of hustle, speed, and action, especially appealing to a younger audience. The balance text ₹19,637 is styled boldly with a dark background and metallic bolts, enhancing credibility and giving it a digital dashboard look. The font is large and clean for instant readability, and the use of green for “Balance” subtly triggers positive financial emotions. The “24 HOURS” icon in the top corner adds urgency and a challenge-based feel, suggesting that the transformation happened in just one day, which increases curiosity and clicks. Overall, this thumbnail smartly combines emotional expression, clear value (money), action-packed design, and time-limited success to psychologically hook the viewer and make them want to watch the video immediately.</p>
+  </div>
+</body>
+</html>

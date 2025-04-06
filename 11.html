@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Thumbnail 1 - Vaibhav Shukla</title>
+  <style>
+    * {
+      padding: 0px;
+      margin: 0px;
+    }
+    :root {
+      --first_color: #00ffff;
+      --second_color: #00d1d1;
+    }
+    body {
+/*      justify-content: center;*/
+      align-items: center;
+      background-color: #1f2328;
+      color: whitesmoke;
+      font-family: system-ui;
+      height: 655px;
+      width: 100%;
+    }
+    .info {
+      margin-top: 40px;
+      margin-left: 100px;
+    }
+    h1 {
+      cursor: pointer;
+      position: relative;
+      font-size: 40px;
+    }
+    h1::before {
+      top: 55px;
+      content: "";
+      position: absolute;
+      height: 5px;
+      width: 60px;
+/*      cursor: pointer;*/
+      transition: 0.5s ease-in-out;
+      background-color: whitesmoke;
+    }
+    h1:hover::before {
+      width: 230px;
+    }
+    span {
+/*      margin-right: 600px;*/
+      color: var(--first_color);
+    }
+    .img {
+      margin-top: 50px;
+    }
+    .img img {
+      margin-left: 370px;
+      border: 2px solid whitesmoke;
+      border-radius: 20px;
+      width: 560px;
+/*      height: 255px;*/
+    }
+    p {
+      margin-top: 30px;
+      text-align: left;
+      line-height: 1.6;
+      font-size: 16px;
+      padding: 0 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="img">
+    <img src="12.jpg" alt="Thumbnail 1" width="400">
+  </div>
+  <div class="info">
+    <h1>About <span> This</span></h1>
+    <p>This thumbnail masterfully captures attention through a compelling blend of mystery, visual storytelling, and psychological triggers. At the center, a red frame highlights the silhouette of a suited figure marked with a question mark, symbolizing an unknown identity and immediately invoking curiosity. Red, being a color associated with urgency and alertness, draws the viewer's eye and creates a sense of importance around the missing person. Surrounding the silhouette are multiple ropes connecting various newspaper clippings pinned to a chalkboard, forming the classic "investigation board" aesthetic. This visual device is widely recognized and taps into the viewer's instinct to solve puzzles and uncover secrets. The scattered question marks further enhance the sense of confusion and encourage viewers to explore the narrative. The dark chalkboard background creates contrast, allowing the bright red and yellow elements to pop, while the grey and white typography maintains clarity and suspense. Headlines like “Guilty,” “Manhunt,” and “Car Found” offer fragmented clues, pushing the viewer to mentally engage with the story. The bold, chalk-like font used in “WHO IS MISSI?” not only matches the detective board theme but also cleverly plays on the Zeigarnik Effect, as the incomplete word "MISSING" makes the viewer subconsciously want to resolve the sentence. Altogether, the thumbnail effectively combines emotion, color theory, symbolism, and narrative cues to create an irresistible visual hook that demands to be clicked.</p>
+  </div>
+</body>
+</html>
